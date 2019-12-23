@@ -16,8 +16,8 @@ $(document).ready(function(){
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        prevArrow: "<img src='../img/new_product/left.svg' class='prev' alt='1'>",
-        nextArrow: "<img src='../img/new_product/right.svg' class='next' alt='2'>",
+        prevArrow: "<img src='img/new_product/left.svg' class='prev' alt='1'>",
+        nextArrow: "<img src='img/new_product/right.svg' class='next' alt='2'>",
         responsive: [
           {
             breakpoint: 1024,
