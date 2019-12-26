@@ -3,6 +3,7 @@
 
 *
     font-family: 'Roboto', sans-serif
+body
 
 .main
     min-height: 700px
@@ -97,6 +98,7 @@
             left: 50%
             transform: translateX(-50%)
             color: #000000
+            transition: all .2s
 .sale
     min-height: 400px
     width: 100%
@@ -119,7 +121,7 @@
         position: absolute
         transform: translateY(100%)
         width: 100%
-        height: 2px
+        height: 1px
         background-color: #000000
 .item
     padding-top: 50px
@@ -224,3 +226,74 @@
         color: #020202
         font-size: 20px
         font-weight: 500
+.us
+    padding-top: 30px
+    margin-bottom: 60px
+    &__subtitle
+        color: #000000
+        font-size: 30px
+        font-weight: 400
+        text-align: center
+        padding-left: 50px
+        padding-right: 50px
+        margin-top: 50px
+    &__img
+        width: 50%
+        display: inline-block
+        margin-top: 50px
+    &__descr
+        display: inline-block
+        width: 480px
+        text-align: center
+        color: #000000
+        font-size: 25px
+        font-weight: 300
+        margin-left: 50px
+        transform: translateY(50%)
+        &-l
+            margin-right: 50px
+            margin-left: 0
+.break
+    width: 100%
+    height: 1px
+    background-color: #000000
+.footer
+    padding-top: 30px
+    &__info
+        display: flex
+        justify-content: space-between
+    &__section
+        margin: 0 50px
+    &__title
+        font-size: 28px
+        position: relative
+        display: inline
+        text-transform: uppercase
+        &:before
+            content: ""
+            bottom: 0
+            position: absolute
+            width: 100%
+            transform: translateY(8px)
+            height: 1px
+            background-color: #000000
+    &__ul
+        list-style: none
+        padding: 0
+        width: 100%
+    &__li
+        margin-top: 15px
+        a
+            color: #000000
+            font-size: 20px
+            font-weight: 400
+    &__social
+        display: flex
+        &-link
+            background-color: #000000
+            i
+                color: #ffffff
+            &:hover .main__footer__link-f
+                color: #ffffff
+                text-decoration: none
+                font-size: 30px
