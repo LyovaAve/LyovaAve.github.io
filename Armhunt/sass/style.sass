@@ -127,11 +127,19 @@ body
     padding-top: 50px
     padding-left: 15px
     padding-right: 15px
-    border: solid 1px 
+    max-height: 400px
     cursor: pointer
     margin-left: 10px
     margin-right: 10px
     outline: none
+    &:hover &__add
+        width: 100%
+        transition: width .4s
+        border-radius: 0
+    &:hover &__add-text
+        width: 100%
+        padding-left: 10px
+        visibility: visible
     &__img
         width: 100%
     &__descr
@@ -150,16 +158,34 @@ body
         display: flex
         border-top: 1px solid #000
         padding-top: 10px
+        text-align: right
+        width: 100%
+        position: relative
     &__add
         color: #000000
         background-color: #666a70
-        width: 100%
+        border-radius: 100%
+        margin-bottom: 10px
+        width: 20%
         height: 50px
         line-height: 50px
-        text-align: center
         font-size: 25px
-        position: relative
+        margin-right: 0
+        padding-right: 8px
+        margin-left: auto
         outline: none
+        transition: border-radius .1s .75s, width .9s
+        overflow: hidden
+        &-text
+            text-align: left 
+            font-size: 18px
+            font-weight: 500
+            line-height: 50px
+            margin-right: 5px
+            visibility: hidden
+            width: 0
+            height: 0
+            margin: 0
         &:hover
             color: #000000
             text-decoration: none
@@ -219,12 +245,13 @@ body
         right: 0
         margin: auto
     &__img-wrap
-        height: 90%
+        height: 85%
         position: relative
     &__title
         bottom: 5px
         color: #020202
         font-size: 20px
+        line-height: 23px
         font-weight: 500
 .us
     padding-top: 30px
